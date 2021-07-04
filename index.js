@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 // import {Users} from "./models/users.js";
-import {userRouter} from "./routes/user.js";
+import {userRouter} from "./user.js";
 
 const app = express();
 const PORT = 5003;
