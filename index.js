@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {userRouter} from "./user.js";
 
 const app = express();
-const PORT = 5003;
+const PORT = process.env.PORT || 5003;
 const url = "mongodb+srv://chinmay:chinmay@123@cluster0.zts7c.mongodb.net/USERS";
 //mongoose
 mongoose.connect(url, { useNewUrlParser: true });
