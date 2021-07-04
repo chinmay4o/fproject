@@ -16,6 +16,7 @@ conn.on("open" , () => console.log("Mongodb connected"));
 app.listen(PORT , () => console.log("connected to port 5003"));
 
 //middler ware
+app.use(cors());
 app.use(express.json());
 
 app.use("/" , userRouter);
